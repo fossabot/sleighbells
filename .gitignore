@@ -1,0 +1,13 @@
+target
+*.swp
+*.iml
+*.ipr
+*.iws
+*.idea
+.project
+.classpath
+.settings
+*.releaseBackup
+release.properties
+atlassian-ide-plugin.xml
+git.properties
