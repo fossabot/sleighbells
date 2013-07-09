@@ -13,6 +13,7 @@ There are some parameters to know about.
 ua.ab.messagesFile: The path to a file with your messages. You can have as many as you like. The file format is as follows: a line that begins "title:" contains a short title that's not sent to users, and is followed by any number of lines containing the message (newlines are preserved). You can see an example of this in resources. 
 
 ua.ab.appKey: Gotta have one of these. 
+
 ua.ab.masterSecret: These too. 
 
 ua.ab.batchSize: How many pushes to send at once. There isn't a ton of reason not to set this to 1 and just let the pushes trickle out, but it's up to you. 
