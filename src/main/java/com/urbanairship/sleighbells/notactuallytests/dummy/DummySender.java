@@ -1,3 +1,6 @@
+/*
+Copyright 2013 Urban Airship and Contributors
+*/
 package com.urbanairship.sleighbells.notactuallytests.dummy;
 
 import com.urbanairship.sleighbells.api.PushSender;

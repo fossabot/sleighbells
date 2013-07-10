@@ -1,3 +1,6 @@
+/*
+Copyright 2013 Urban Airship and Contributors
+*/
 package com.urbanairship.sleighbells.ua.api;
 
 import com.urbanairship.sleighbells.api.StatsChecker;

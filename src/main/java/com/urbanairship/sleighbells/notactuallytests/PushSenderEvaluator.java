@@ -1,3 +1,6 @@
+/*
+Copyright 2013 Urban Airship and Contributors
+*/
 package com.urbanairship.sleighbells.notactuallytests;
 
 import com.google.common.collect.ImmutableList;
@@ -12,7 +15,7 @@ public class PushSenderEvaluator {
     private static final String APPKEY = "";
 
     private static final String APID = "";
-    private static final String DEVICE_TOKEN = "1C72C72972996A7DBAEBFAE7184E474C14EBD01A54E12EC5336E0F80DE3CF7B5";
+    private static final String DEVICE_TOKEN = "";
 
     public static void main(String... args) {
         final App app = new App(APPKEY, MASTER_SECRET);

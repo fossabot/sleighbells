@@ -1,3 +1,6 @@
+/*
+Copyright 2013 Urban Airship and Contributors
+*/
 package com.urbanairship.sleighbells.agnostic;
 
 import com.urbanairship.sleighbells.api.DeviceIdentifierSource;
