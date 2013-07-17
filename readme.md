@@ -28,4 +28,4 @@ Graphs
 ------
 The graphs directory contains a script for plotting the sends, opens, and probability of leading to an open for each message over time. 
 The plots in our blog post were generated with this script. 
-It reads the logging output from AbTestRunner (so you'll need to have saved taht), performs some more API calls, and then uses R to spit out reasonably attractive plots. 
+It reads the logging output from AbTestRunner (so you'll need to have saved that), performs some more API calls, and then uses R to spit out reasonably attractive plots. 
