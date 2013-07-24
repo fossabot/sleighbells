@@ -67,7 +67,7 @@ public class StatsForCsv {
                 final int addlSends = extSends + stat.pushByPlatform.all.sends;
                 pushSends.put(millis, addlSends);
                 final int extOpens = pushOpens.containsKey(millis) ? pushOpens.get(millis) : 0;
-                final int addlOpens = extOpens + stat.pushByPlatform.all.influencedOpens;
+                final int addlOpens = extOpens + stat.pushByPlatform.all.influencedResponses;
                 pushOpens.put(millis, addlOpens);
             }
         }
@@ -123,7 +123,7 @@ public class StatsForCsv {
         public static class PlatformHourStats {
             int sends;
             int directOpens;
-            int influencedOpens;
+            int influencedResponses;
 
             public PlatformHourStats() {
             }
@@ -144,12 +144,12 @@ public class StatsForCsv {
                 this.directOpens = directOpens;
             }
 
-            public int getInfluencedOpens() {
-                return influencedOpens;
+            public int getInfluencedResponses() {
+                return influencedResponses;
             }
 
-            public void setInfluencedOpens(int influencedOpens) {
-                this.influencedOpens = influencedOpens;
+            public void setInfluencedResponses(int influencedResponses) {
+                this.influencedResponses = influencedResponses;
             }
 
             @Override
@@ -157,7 +157,7 @@ public class StatsForCsv {
                 return "PlatformHourStats{" +
                         "sends=" + sends +
                         ", directOpens=" + directOpens +
-                        ", influencedOpens=" + influencedOpens +
+                        ", influencedResponses=" + influencedResponses +
                         '}';
             }
         }
