@@ -47,16 +47,19 @@ public class MessageChooserBayesBetaBinomialImpl implements MessageChooser {
         return requests;
     }
 
-    // The Thompson technique for choosing a message is to sample the parameters of the likelihood
-    // distribution for each message, then choose the one with the maximum likelihood. Here, the parameter
-    // is the likelihood, so we just compare those.
+
+    // The Thompson technique for choosing a message is to sample parameters from the
+    // posterior distributions associated with each message, then choose the message
+    // with the highest expected reward.
+    // Here, the expected reward is the probability of a conversion, which is also the
+    // sampled parameter, so we just compare those.
     private static Message chooseAMessage(Map<Message, BetaDistribution> betaMap) {
         double max = Double.NEGATIVE_INFINITY;
         Message r = null;
         for (Map.Entry<Message, BetaDistribution> entry : betaMap.entrySet()) {
             // draw the sample
             final double sample = entry.getValue().sample();
-            // update the maximum likelihood & associated message
+            // update the maximum expected reward & associated message
             if (sample > max) {
                 r = entry.getKey();
                 max = sample;

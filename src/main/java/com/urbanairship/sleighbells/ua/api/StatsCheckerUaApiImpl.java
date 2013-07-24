@@ -36,7 +36,7 @@ public class StatsCheckerUaApiImpl extends BaseUaApiCommunication implements Sta
             try {
                 String responseBody = CLIENT.execute(get, responseHandler);
                 final JsonNode rootNode = new ObjectMapper().readValue(responseBody, JsonNode.class);
-                final int opens = rootNode.get("influenced_opens").asInt();
+                final int opens = rootNode.get("influenced_responses").asInt();
                 final int sends = rootNode.get("sends").asInt();
                 success = true;
                 return new PushStatistics(sends, opens);
