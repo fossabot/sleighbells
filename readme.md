@@ -1,4 +1,5 @@
 [![A/B Machines](http://c10566323.r23.cf2.rackcdn.com/03-28-20_derek-e-miller-and-alexis-krauss_original.jpg)](http://www.youtube.com/watch?v=DViGaee5oEs)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Furbanairship%2Fsleighbells.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Furbanairship%2Fsleighbells?ref=badge_shield)
 
 This is a demo application for optimizing user response to push notifications by testing two or more variations on a message. 
 
@@ -29,3 +30,7 @@ Graphs
 The graphs directory contains a script for plotting the sends, opens, and probability of leading to an open for each message over time. 
 The plots in our blog post were generated with this script. 
 It reads the logging output from AbTestRunner (so you'll need to have saved that), performs some more API calls, and then uses R to spit out reasonably attractive plots. 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Furbanairship%2Fsleighbells.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Furbanairship%2Fsleighbells?ref=badge_large)
